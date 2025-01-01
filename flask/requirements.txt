@@ -1,0 +1,4 @@
+flask
+happybase
+pandas
+matplotlib
