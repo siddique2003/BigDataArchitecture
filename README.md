@@ -143,8 +143,8 @@ We used the dataset [Ecommerce Churn](https://www.kaggle.com/datasets/saiparthas
 
 | **Contributor Name**          | **Role**                       |
 |--------------------------------|---------------------------------|
-| **Muhammad Siddique Khatri**  | Data Engineer & BI Expert      |
-| **Muhammad Sarim ul Haque**   | Data Engineer                  |
-| **Raine Ramchand**            | Data Engineer                  |
+| **Muhammad Siddique Khatri**  | Data Engineer & BI Expert                                  |
+| **Muhammad Sarim ul Haque**   | Data Engineer & System Architect                           |
+| **Raine Ramchand**            | Data Engineer & Web Application Developer                  |
 
 
