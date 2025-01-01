@@ -1,7 +1,6 @@
 # 🚀 **Ecommerce Big Data Analytics Pipeline**  
 *Uncovering insights with real-time and batch processing*
 
-![Architecture](https://github.com/siddique2003/BigDataArchitecture/blob/main/architecture.jpg)
 
 ---
 
@@ -44,7 +43,7 @@ This project utilizes the following technologies:
 - **Spark:** SQL-based querying and in-memory computation.  
 - **Flask:** Visualization and BI dashboard development.
 
-![Pipeline Architecture](https://github.com/your-repo-link/architecture.jpg)  
+![Pipeline Architecture](https://github.com/siddique2003/BigDataArchitecture/blob/main/architecture.jpg)  
 
 ---
 
