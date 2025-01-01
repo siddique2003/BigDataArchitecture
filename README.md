@@ -1,7 +1,7 @@
 # 🚀 **Ecommerce Big Data Analytics Pipeline**  
 *Uncovering insights with real-time and batch processing*
 
-![Architecture](https://github.com/your-repo-link/architecture.jpg)
+![Architecture](https://github.com/siddique2003/BigDataArchitecture/blob/main/architecture.jpg)
 
 ---
 
