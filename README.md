@@ -1,10 +1,14 @@
-# 🚀 **Ecommerce Big Data Analytics Pipeline**  
-*Uncovering insights with real-time and batch processing*
+# 🌟 **Ecommerce Big Data Analytics Pipeline**  
 
+[![Real-Time Streaming](https://img.shields.io/badge/Real--Time-Streaming-FF5733?style=for-the-badge&logo=apache-kafka)](https://hub.docker.com/u/msiddique2003)  
+[![Batch Processing](https://img.shields.io/badge/Batch-Processing-blue?style=for-the-badge&logo=apache-hadoop)](https://hub.docker.com/u/msiddique2003)  
+[![HBase Queries](https://img.shields.io/badge/HBase-Queries-green?style=for-the-badge&logo=apache-hbase)](https://hub.docker.com/u/msiddique2003)  
+[![Interactive Dashboard](https://img.shields.io/badge/Interactive-Dashboard-purple?style=for-the-badge&logo=flask)](http://localhost:8000)  
 
 ---
 
 ## 📋 **Table of Contents**  
+
 - [Introduction](#introduction)  
 - [Dataset and Assumptions](#dataset-and-assumptions)  
 - [Technology Stack and Architecture](#technology-stack-and-architecture)  
@@ -13,68 +17,84 @@
 - [Setup and Installation](#setup-and-installation)  
 - [Scripts and Usage](#scripts-and-usage)  
 - [Docker Containers](#docker-containers)  
-- [Contributors](#contributors)
+- [Contributors](#contributors)  
 
 ---
 
 ## 📖 **Introduction**  
-In this project, we designed and implemented a **Big Data Analytics Pipeline** to handle and analyze ecommerce data efficiently. This pipeline combines real-time processing with batch analytics, leveraging technologies like Kafka, HBase, HDFS, Spark, and Flask for creating dashboards. The system is designed to process data rapidly while ensuring persistence for large-scale batch queries.
+
+Welcome to the **Ecommerce Big Data Analytics Pipeline**!  
+Our project combines the power of **real-time streaming**, **batch processing**, and **data visualization** to analyze and make sense of ecommerce data.  
+Through this pipeline, you'll explore how to handle **real-time ingestion** with Kafka, process data with Spark, and visualize insights on a **dynamic dashboard**.
 
 ---
 
 ## 📊 **Dataset and Assumptions**  
 
 ### Dataset  
-The dataset comprises ecommerce transactions, including information about users, products, events, and pricing.  
 
-### Key Assumptions  
-- The platform requires **real-time updates** for immediate insights.  
-- **Batch analytics** on large datasets provide deeper trends.  
-- Data cleaning and transformation are applied for consistency.  
-- A **unique row identifier** is added for easy querying.  
+- **Users**: Identifiers and session details.  
+- **Products**: IDs, brands, and categories.  
+- **Events**: Views, purchases, and timestamps.  
+
+### Assumptions  
+
+- The pipeline supports **real-time updates** for low-latency analytics.  
+- Data is stored in a **dual-layer architecture** for efficient querying:  
+  - **HDFS**: For batch-based large-scale analytics.  
+  - **HBase**: For quick, random-access analytics.  
 
 ---
 
 ## 🛠 **Technology Stack and Architecture**  
-This project utilizes the following technologies:  
-- **Kafka:** Real-time data ingestion.  
-- **HDFS:** Batch storage for large-scale analytics.  
-- **HBase:** Optimized for low-latency, random-access queries.  
-- **Spark:** SQL-based querying and in-memory computation.  
-- **Flask:** Visualization and BI dashboard development.
 
-![Pipeline Architecture](https://github.com/siddique2003/BigDataArchitecture/blob/main/architecture.jpg)  
+### Architecture Overview  
+
+![Pipeline Architecture](https://github.com/siddique2003/BigDataArchitecture/blob/main/architecture.jpg)
+
+### Key Components  
+
+- **Kafka**: Ingests real-time data streams.  
+- **HDFS**: Stores data for batch processing.  
+- **HBase**: Supports random-access reads for real-time analytics.  
+- **Spark**: Performs in-memory data processing and querying.  
+- **Flask**: Hosts the **interactive BI dashboard**.  
 
 ---
 
 ## 🚩 **Features**  
-- **Real-time ingestion and batch storage**  
-- **BI dashboards** with interactive visualizations.  
-- **SQL querying via Spark** for in-memory performance.  
-- Supports **both large-scale and targeted analytics**.  
+
+✨ Real-time streaming with Kafka.  
+✨ Batch processing for comprehensive analytics.  
+✨ Interactive dashboard for visualization.  
+✨ SQL querying for seamless data exploration.  
+✨ Scalable design for large datasets.  
 
 ---
 
 ## 🔄 **Project Flow**  
 
-1. **Data Ingestion:** Kafka ingests data into HDFS for batch analytics and HBase for low-latency access.  
-2. **Data Cleaning & Transformation:** Data is cleaned using PySpark scripts.  
-3. **Query Engine:** Spark queries the dataset for analytics.  
-4. **BI Dashboard:** Flask visualizes the processed data interactively.
+1. **Ingestion**: Kafka ingests data from an external source.  
+2. **Storage**:  
+   - **HDFS**: Batch processing and large-scale data transformation.  
+   - **HBase**: Random-access for focused analytics.  
+3. **Transformation**: PySpark cleanses and processes raw data.  
+4. **Querying**: Spark SQL is used to run analytics queries.  
+5. **Visualization**: Flask serves dynamic dashboards for end-users.  
 
 ---
 
 ## ⚙️ **Setup and Installation**  
 
 ### Prerequisites  
-- Docker and Docker Compose  
-- Python 3.x  
-- Java 8+  
-- Hadoop setup for HDFS commands  
 
-### Installation Steps  
+- **Docker** and **Docker Compose** installed.  
+- **Python 3.x** environment.  
+- **Java 8+** runtime.  
 
-1. Clone the repository:  
-   ```bash  
-   git clone https://github.com/your-repo-link.git  
-   cd ecommerce-analytics  
+### Installation  
+
+1. Clone this repository:  
+   ```bash
+   git clone https://github.com/siddique2003/BigDataAnalyticsPipeline.git  
+   cd BigDataAnalyticsPipeline
